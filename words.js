@@ -21,6 +21,9 @@ export const WORDS = [
     'spawn',
     'stick',
     'swing',
+    'comms',
+    'force',
+    'stack',
     'tarik',
     'shahz',
   ]

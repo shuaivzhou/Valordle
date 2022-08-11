@@ -54,11 +54,9 @@ h1 {
     text-transform: uppercase;
   }
 
-  input[type=text] {
-    width: 10rem;
-    height: 1rem;
-    padding: 12px 20px;
-    margin: 0 auto;
-    align-items: center;
-    box-sizing: border-box;
+  input
+  {
+    border: 2px solid gray;
+    height: 25px;
+    width: 235px;
   }
