@@ -1,10 +1,17 @@
 import { WORDS } from "./words.js";
 
+const date = new Date();
+const hashString = date.getUTCFullYear() + date.getUTCMonth() + date.getUTCDate();
+const hasherA = 1824123;
+const hasherB = 9340914;
+const hashedInt = hasherA * parseInt(hashString) + hasherB;
+const todayWordIndex = hashedInt % WORDS.length;
+
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
-let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)]
+let rightGuessString = WORDS[todayWordIndex]
 
 console.log(rightGuessString)
 
